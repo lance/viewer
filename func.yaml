@@ -1,0 +1,24 @@
+version: 0.23.0
+name: viewer
+namespace: ""
+runtime: node
+registry: ""
+image: quay.io/lanceball/viewer:latest
+imageDigest: sha256:07640cbc39e3edcc3fa22de26922d77194965cc990003d894708035518bf4cb1
+build: local
+git: {}
+builder: ""
+builders: {}
+buildpacks: []
+volumes: []
+buildEnvs: []
+envs: []
+annotations: {}
+options: {}
+labels: []
+healthEndpoints:
+  liveness: /health/liveness
+  readiness: /health/readiness
+created: 2022-07-01T08:58:53.522177-04:00
+invocation:
+  format: cloudevent
