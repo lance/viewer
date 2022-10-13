@@ -1,0 +1,21 @@
+specVersion: 0.25.0
+name: viewer
+namespace: ""
+runtime: node
+registry: ""
+image: ""
+imageDigest: ""
+buildpacks: []
+builder: ""
+volumes: []
+buildEnvs: []
+envs: []
+annotations: {}
+options: {}
+labels: []
+healthEndpoints:
+  liveness: /health/liveness
+  readiness: /health/readiness
+created: 2022-10-13T15:42:29.744164-04:00
+invocation:
+  format: http
