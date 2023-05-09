@@ -1,21 +1,15 @@
-specVersion: 0.25.0
+specVersion: 0.35.0
 name: viewer
-namespace: ""
 runtime: node
 registry: quay.io/lanceball
 image: quay.io/lanceball/viewer:latest
-imageDigest: ""
-buildpacks: []
-builder: s2i
-volumes: []
-buildEnvs: []
-envs: []
-annotations: {}
-options: {}
-labels: []
-healthEndpoints:
-  liveness: /health/liveness
-  readiness: /health/readiness
 created: 2022-10-13T15:42:29.744164-04:00
-invocation:
-  format: http
+build:
+  git:
+    url: https://github.com/lance/viewer
+    revision: main
+  builder: s2i
+deploy:
+  healthEndpoints:
+    liveness: /health/liveness
+    readiness: /health/readiness
