@@ -9,6 +9,7 @@ build:
     url: https://github.com/lance/viewer
     revision: main
   builder: s2i
+  pvcSize: 256Mi
 deploy:
   healthEndpoints:
     liveness: /health/liveness

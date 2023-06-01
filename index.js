@@ -27,7 +27,7 @@ const handle = async (context) => {
   // If the request is an HTTP GET, the context will include a query string, if it exists
   } else if (context.method === 'GET') {
     return {
-      query: context.query,
+      query: "QUERY: " + context.query,
     }
   } else {
     return { statusCode: 405, statusMessage: 'Method not allowed' };
